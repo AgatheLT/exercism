@@ -3,12 +3,7 @@ class Lasagna
   MINUTES_PER_LAYER = 2
 
   def remaining_minutes_in_oven(actual_minutes_in_oven)
-    if actual_minutes_in_oven < 0
-      EXPECTIED_MINUTED_IN_OVEN
-    elsif actual_minutes_in_oven >= EXPECTIED_MINUTED_IN_OVEN
-      0
-    else 
-      EXPECTIED_MINUTED_IN_OVEN - actual_minutes_in_oven
+    EXPECTED_MINUTES_IN_OVEN - actual_minutes_in_oven
   end
 
   def preparation_time_in_minutes(layers)
